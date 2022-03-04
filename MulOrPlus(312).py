@@ -2,7 +2,7 @@ s = input()
 result = 0
 
 for i in s:
-    if result == 0:
+    if result <= 1:
         result += int(i)
     elif int(i) <= 1:
         result += int(i)
