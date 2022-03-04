@@ -1,10 +1,12 @@
 s = input()
-result = int(s[0])
+result = 0
 
-for i in s[1:]:
+for i in s:
     if result == 0:
         result += int(i)
-    elif int(i) != 0:
+    elif int(i) <= 1:
+        result += int(i)
+    else:
         result *= int(i)
 
 print(result)
